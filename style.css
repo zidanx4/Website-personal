@@ -1,0 +1,295 @@
+
+/* keseluruhan */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #b5e5f9, #88d1f2, #52bcec);
+  color: #222;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* navbar */
+.nav {
+  background: linear-gradient(135deg, #b5e5f9, #88d1f2, #0065c1);
+  padding: 15px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.brand img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav__links a {
+  margin-left: 25px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+
+.nav__links a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #094fa4;
+}
+
+.hero-img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+    /* Animasi zoom-in halus */
+    animation: zoomHero 3.5s ease forwards;
+    opacity: 0; /* supaya muncul pelan */
+}
+
+@keyframes zoomHero {
+    0% {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.accent {
+  color: #0065c1;
+}
+
+.lead {
+  margin: 18px 0;
+  max-width: 550px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #0065c1;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #094fa4;
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 2px solid #0065c1;
+  color: #05325c;
+  margin-left: 10px;
+}
+
+.btn--ghost:hover {
+  background: #06345f;
+  color: white;
+}
+
+/* === SOCIAL MEDIA === */
+.hero .find-me {
+  margin-top: 40px;
+}
+
+.find-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0065c1;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  background: #b5e5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.socials a:hover {
+  background: #0065c1;
+  transform: translateY(-4px);
+}
+
+.socials img {
+  width: 20px;
+  height: 20px;
+}
+
+/* === SECTIONS === */
+.section--alt {
+  background: linear-gradient(135deg, #b5e5f9, #88d1f2, #52bcec);
+  padding: 80px 0;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* === GRID 2 === */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* === CARD === */
+.card {
+  padding: 25px;
+  background: linear-gradient(135deg, #b5e5f9, #88d1f2);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.list {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 6px;
+}
+
+/* Project kelas */
+.cards {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+}
+
+.project {
+  background: linear-gradient(135deg, #b5e5f9, #88d1f2, #52bcec);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  padding: 5px 12px;
+  margin-right: 5px;
+  border-radius: 6px;
+  font-size: 13px;
+  background: #b5e5f9;
+  color: #0065c1;
+  font-weight: 600;
+}
+
+/* bagian email */
+.center {
+  text-align: center;
+}
+
+.muted {
+  color: #555;
+}
+
+/* ini footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #094fa4;
+  color: white;
+  margin-top: 50px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .actions .btn--ghost {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
