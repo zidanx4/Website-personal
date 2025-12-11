@@ -182,7 +182,7 @@ a {
   height: 20px;
 }
 
-/* === SECTIONS === */
+/* SECTIONS */
 .section--alt {
   background: linear-gradient(135deg, #b5e5f9, #88d1f2, #52bcec);
   padding: 80px 0;
@@ -192,14 +192,14 @@ section {
   padding: 80px 0;
 }
 
-/* === GRID 2 === */
+/* GRID 2 */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
 
-/* === CARD === */
+/* CARD */
 .card {
   padding: 25px;
   background: linear-gradient(135deg, #b5e5f9, #88d1f2);
@@ -271,7 +271,7 @@ footer {
   margin-top: 50px;
 }
 
-/* === RESPONSIVE === */
+/*  RESPONSIVE */
 @media (max-width: 768px) {
   .grid-2 {
     grid-template-columns: 1fr;
