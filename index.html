@@ -1,147 +1,135 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio — Zidane Fitrah Ramadhan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio — Zidane Fitrah Ramadhan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
-  <header class="nav">
-    <div class="container nav__wrap">
-      <a class="brand" href="#home">
-        <img src="aset/zidan.jpg" alt="Foto Profil">
-        Zidane Fitrah Ramadhan
-      </a>
-
-      <nav class="nav__links">
-        <a href="#about">Tentang</a>
-        <a href="#projects">Project</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-<section class="hero container">
-    <div>
-        <h1>Halo, Saya <span class="accent">Zidane Fitrah Ramadhan</span></h1>
-        <p class="lead">Seorang pelajar SMK yang tertarik pada Web Development dan Design.</p>
-
-        <div class="actions">
-            <a href="#" class="btn">Lihat Portofolio</a>
-            <a href="#" class="btn btn--ghost">Hubungi Saya</a>
+    <header class="nav">
+        <div class="container nav__wrap">
+            <a class="brand" href="#home">
+                <span class="accent">Zidane Fitrah Ramadhan</span>
+            </a>
+            <nav class="nav__links">
+                <a href="#about">Tentang</a>
+                <a href="#skills">Skill</a> <a href="#projects">Project</a>
+                <a href="#contact">Kontak</a>
+            </nav>
         </div>
+    </header>
 
-        <!-- FIND ME DALAM HERO -->
-        <div class="find-me">
-            <p class="find-title">Find Me On</p>
+    <section id="home" class="hero container">
+        <div class="hero-text">
+            <h1>Halo, Saya <span class="accent">Zidane Fitrah Ramadhan</span></h1>
+            <p class="lead">Pelajar SMK yang tertarik pada Web Development dan Design.</p>
 
-            <div class="social-icons">
-                <a href="https://www.instagram.com/e_zidan123/" class="icon">
-                    <img src="aset/ig.png" alt="Instagram">
-                </a>
+            <div class="actions">
+                <a href="#projects" class="btn">Lihat Portofolio</a>
+                <a href="#contact" class="btn btn--ghost">Hubungi Saya</a>
+            </div>
 
-                <a href="https://wa.me/6282211037054  " class="icon">
-                    <img src="aset/wa.png" alt="WhatsApp">
-                </a>
-
-                <a href="https://github.com/zidanx4" class="icon">
-                    <img src="aset/git.png" alt="github">
-                </a>
+            <div class="find-me">
+                <p class="find-title">Find Me On</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/e_zidan123/" class="icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/6282211037054/" class="icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://github.com/zidanx4" class="icon" aria-label="Github"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <img src="aset/zidan1.jpg" alt="Profile" class="hero-img">
+        <div class="hero-img-wrap">
+            <img src="aset/zidan1.jpg" alt="Profile" class="hero-img">
+            <div class="glow-circle"></div>
+        </div>
+    </section>
+
+    <section id="about" class="section--alt">
+        <div class="container center" style="max-width: 800px;">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="underline center"></div>
+            <p style="font-size: 1.1rem; color: var(--text-muted);">
+                Saya seorang Junior Programmer yang berfokus pada website modern dan game development. Saya suka belajar dan menciptakan solusi digital kreatif.
+            </p>
+        </div>
+    </section>
+
+<section id="skills" class="container">
+    <h2 class="section-title center">My Skills</h2>
+    <div class="underline center"></div> 
+    <div class="skills-grid">
+        <div class="skill-card">
+            <i class="fab fa-html5 skill-icon"></i>
+            <h3>HTML Dasar</h3>
+            <p>Menguasai struktur dokumen, semantik HTML5, dan penggunaan tag yang benar.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-css3-alt skill-icon"></i>
+            <h3>CSS Dasar</h3>
+            <p>Mampu melakukan styling, layouting menggunakan Flexbox, dan membuat responsivitas dasar.</p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database skill-icon"></i> 
+            <h3>Database Basic</h3>
+            <p>Baru memahami konsep dasar relasional (SQL) dan normalisasi database sederhana.</p>
+        </div>
+    </div>
 </section>
 
+    <section id="projects" class="container">
+        <h2 class="section-title center">Project Pilihan</h2>
+        <p class="muted center">Beberapa karya yang saya buat</p>
 
-  <!-- ABOUT -->
-  <section id="about" class="section--alt">
-    <div class="container grid-2">
-      <div>
-        <h2>Tentang Saya</h2>
-        <p>Saya seorang Junior Programmer yang berfokus pada pembuatan website modern dan pengembangan game di Roblox Studio. Saya suka belajar, berinovasi, dan membuat solusi digital yang kreatif.</p>
+        <div class="cards">
+            <div class="project">
+                <img src="aset/helllokity.png" alt="Animasi CSS">
+                <div class="project-content">
+                    <h3>Animasi CSS</h3>
+                    <p>Membuat animasi manual menggunakan HTML & CSS.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span></div>
+                </div>
+            </div>
 
-        <br>
-        <h3>Skill</h3>
-        <ul class="list">
-          <li>HTML, CSS</li>
-          <li>Responsive Design</li>
-          <li>Problem Solving</li>
-          <li>Kreatif & Adaptif</li>
-        </ul>
+            <div class="project">
+                <img src="aset/lego.jpg" alt="Lego Doraemon">
+                <div class="project-content">
+                    <h3>Lego Doraemon</h3>
+                    <p>Membangun Lego Doraemon dengan teamwork & problem solving.</p>
+                    <div class="tags"><span>Teamwork</span><span>Problem Solving</span></div>
+                </div>
+            </div>
 
-        <br>
-        <h3>Hobi</h3>
-        <ul class="list">
-          <li>Silat</li>
-          <li>Badminton</li>
-        </ul>
-      </div>
+            <div class="project">
+                <img src="aset/bubble login.png" alt="Bubble Login">
+                <div class="project-content">
+                    <h3>Bubble Login</h3>
+                    <p>Desain login modern menggunakan HTML & CSS.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
 
-      <div class="card">
-        <h3>Info Singkat</h3>
-        <ul class="list">
-          <li><strong>Lokasi:</strong> Citayam village Block F No 2, Indonesia</li>
-          <li><strong>Fokus:</strong> Web Dev, Game Dev</li>
-          <li><strong>Email:</strong> Zidanefitrahramadhan@gmail.com</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <section id="contact" class="section--alt">
+        <div class="container center contact-wrap">
+            <h2 class="section-title">Kontak</h2>
+            <p>Ingin bekerja sama? Kirimkan pesan melalui email atau hubungi saya melalui media sosial.</p>
+            <a class="btn" href="mailto:ZidaneFitrahramadhan@gmail.com">Email Saya</a>
+        </div>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="container">
-    <h2>Project Pilihan</h2>
-    <p class="muted">Beberapa karya Yang saya buat</p>
+    <footer>
+        <p>© <span id="year"></span> Zidane Fitrah Ramadhan — Portofolio</p>
+    </footer>
 
-    <div class="cards">
-      <div class="project">
-        <img src="aset/helllokity.png" alt="Project CSS Animasi">
-        <h3>Animasi CSS</h3>
-        <p>Membuat animasi manual menggunakan HTML & CSS.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span></div>
-      </div>
-
-      <div class="project">
-        <img src="aset/lego.jpg" alt="Lego Doraemon">
-        <h3>Lego Doraemon</h3>
-        <p>Membangun Lego Doraemon dengan teamwork & problem solving.</p>
-        <div class="tags"><span>Teamwork</span><span>Problem Solving</span></div>
-      </div>
-
-      <div class="project">
-        <img src="aset/bubble login.png" alt="Bubble Login Design">
-        <h3>Bubble Login</h3>
-        <p>Desain login modern menggunakan HTML & CSS.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section--alt">
-    <div class="container center">
-      <h2>Kontak</h2>
-      <p>Ingin bekerja sama? Kirimkan pesan melalui email.</p>
-      <a class="btn" href="ZidaneFitrahramadhan@gmail.com">Email Saya</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© <span id="year"></span> Zidane Fitrah Ramadhan — Portofolio</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
